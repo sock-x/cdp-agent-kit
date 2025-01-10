@@ -1,0 +1,23 @@
+{
+  "name": "cdp-agent-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sock-x/cdp-agent-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sock-x/cdp-agent-backend/issues"
+  },
+  "homepage": "https://github.com/sock-x/cdp-agent-backend#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

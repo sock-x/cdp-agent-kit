@@ -1,0 +1,58 @@
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, 
+initial-scale=1.0">
+         <title>054.ai - The Future of AI</title>
+         <link rel="stylesheet" href="style.css">
+     </head>
+     <body>
+         <div id="matrix-background"></div>
+         <div id="content">
+             <header>
+                 <h1>Welcome to 054.ai</h1>
+                 <p>Revolutionizing AI with a Futuristic Touch</p>
+             </header>
+             <main>
+                 <section id="crypto-data">
+                     <h2>Cryptocurrency Insights</h2>
+                     <button onclick="fetchCryptoData()">Get Latest 
+Data</button>
+                     <div id="data-display"></div>
+                 </section>
+             </main>
+         </div>
+         <script src="script.js"></script>
+     </body>
+nano index.html
+
+
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, 
+initial-scale=1.0">
+         <title>054.ai - The Future of AI</title>
+         <link rel="stylesheet" href="style.css">
+     </head>
+     <body>
+         <div id="matrix-background"></div>
+         <div id="content">
+             <header>
+                 <h1>Welcome to 054.ai</h1>
+                 <p>Revolutionizing AI with a Futuristic Touch</p>
+             </header>
+             <main>
+                 <section id="crypto-data">
+                     <h2>Cryptocurrency Insights</h2>
+                     <button onclick="fetchCryptoData()">Get Latest 
+Data</button>
+                     <div id="data-display"></div>
+                 </section>
+             </main>
+         </div>
+         <script src="script.js"></script>
+     </body>
+     </html>
