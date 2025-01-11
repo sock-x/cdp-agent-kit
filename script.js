@@ -17,11 +17,11 @@ function createSnowflake() {
 setInterval(createSnowflake, 100);
 
 function fetchCryptoData() {
-    fetch('/api/crypto-data')
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd')
         .then(response => response.json())
         .then(data => {
             const display = document.getElementById('data-display');
-            display.innerHTML = `<p>Bitcoin Price: $${data.bitcoinPrice}</p>`;
+            display.innerHTML = `<p>Bitcoin Price: $${data.bitcoin.usd}</p>`;
         })
         .catch(error => {
             console.error('Error fetching data:', error);
