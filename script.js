@@ -31,3 +31,43 @@ function fetchCryptoData() {
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Welcome to 054.ai - The Future of AI");
 });
+function createSnowflake(layer) {
+    const snowflake = document.createElement('div');
+    snowflake.classList.add('snowflake');
+    snowflake.textContent = '❄';
+
+    // Customize properties based on the layer
+    let duration, fontSize, opacity;
+    switch (layer) {
+        case 'snow-layer-1':
+            duration = Math.random() * 2 + 3; // 3 to 5 seconds
+            fontSize = Math.random() * 5 + 10; // 10px to 15px
+            opacity = Math.random() * 0.5 + 0.5; // 0.5 to 1
+            break;
+        case 'snow-layer-2':
+            duration = Math.random() * 2 + 4; // 4 to 6 seconds
+            fontSize = Math.random() * 5 + 15; // 15px to 20px
+            opacity = Math.random() * 0.4 + 0.6; // 0.6 to 1
+            break;
+        case 'snow-layer-3':
+            duration = Math.random() * 2 + 5; // 5 to 7 seconds
+            fontSize = Math.random() * 5 + 20; // 20px to 25px
+            opacity = Math.random() * 0.3 + 0.7; // 0.7 to 1
+            break;
+    }
+
+    snowflake.style.left = Math.random() * window.innerWidth + 'px';
+    snowflake.style.animationDuration = duration + 's';
+    snowflake.style.opacity = opacity;
+    snowflake.style.fontSize = fontSize + 'px';
+
+    document.getElementById(layer).appendChild(snowflake);
+
+    setTimeout(() => {
+        snowflake.remove();
+    }, duration * 1000);
+}
+
+setInterval(() => createSnowflake('snow-layer-1'), 100);
+setInterval(() => createSnowflake('snow-layer-2'), 150);
+setInterval(() => createSnowflake('snow-layer-3'), 200);
